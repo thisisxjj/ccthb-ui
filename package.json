@@ -1,0 +1,8 @@
+{
+  "name": "ccthb-ui",
+  "private": true,
+  "scripts": {
+    "hello": "echo 'hello world'"
+  },
+  "devDependencies": {}
+}
