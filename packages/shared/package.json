@@ -1,0 +1,19 @@
+{
+  "name": "@ccthb-ui/shared",
+  "scripts": {
+    "dev": "echo shared dev",
+    "build": "vite build"
+  },
+  "main": "./dist/ccthb-ui-shared.umd.js",
+  "module": "./dist/ccthb-ui-shared.mjs",
+  "exports": {
+    ".": {
+      "require": "./dist/ccthb-ui-shared.umd.js",
+      "module": "./dist/ccthb-ui-shared.mjs"
+    }
+  },
+  "dependencies": {
+    "@types/lodash": "^4.17.0",
+    "lodash": "^4.17.21"
+  }
+}

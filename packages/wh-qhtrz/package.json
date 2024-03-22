@@ -1,8 +1,0 @@
-{
-  "name": "ccthb-ui",
-  "private": true,
-  "scripts": {
-    "hello": "echo 'wuhan qhtrz'"
-  },
-  "devDependencies": {}
-}

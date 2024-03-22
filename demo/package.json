@@ -1,0 +1,12 @@
+{
+  "name": "@ccthb-ui/demo",
+  "private": true,
+  "scripts": {
+    "dev": "vite dev"
+  },
+  "dependencies": {
+    "@ccthb-ui/ui": "workspace:^"
+  },
+  "devDependencies": {
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@ccthb-ui/ui",
+  "scripts": {
+    "dev": "echo ccthb ui dev",
+    "build": "vite build"
+  },
+  "main": "./dist/ccthb-ui.umd.js",
+  "module": "./dist/ccthb-ui.mjs",
+  "exports": {
+    ".": {
+      "require": "./dist/ccthb-ui.umd.js",
+      "module": "./dist/ccthb-ui.mjs"
+    }
+  },
+  "dependencies": {
+    "@ccthb-ui/components": "workspace:^",
+    "@ccthb-ui/shared": "workspace:^"
+  }
+}
