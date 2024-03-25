@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "rootDir": ".",
+    "baseUrl": ".",
+    "outDir": "dist",
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "sourceMap": false,
+    "removeComments": false,
+    "strict": true,
+    "noUnusedLocals": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "lib": [],
+    "types": [],
+    "paths": {
+      "@ccthb-ui/components": ["packages/components/*/src"],
+      "@ccthb-ui/*": ["packages/*/src"]
+    }
+  }
+}

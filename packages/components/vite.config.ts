@@ -1,6 +1,7 @@
 // packages/button/vite.config.ts
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import { join } from 'node:path'
 
 export default defineConfig({
   // 增加插件的使用
@@ -19,5 +20,13 @@ export default defineConfig({
         'vue'
       ],
     },
+  },
+  resolve: {
+    alias: [
+      {
+        find: /^@ccthb-ui\/(.+)$/, 
+        replacement: join(__dirname, '..', 'packages', '$1', 'src') 
+      },
+    ]
   }
 })

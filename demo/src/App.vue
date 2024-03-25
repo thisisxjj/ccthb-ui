@@ -8,7 +8,7 @@ import {
 
 <template>
   <div>
-    <Button>1111</Button>
+    <Button variant="danger">1111</Button>
     <Input />
   </div>
 </template>

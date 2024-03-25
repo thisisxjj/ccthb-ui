@@ -5497,7 +5497,8 @@ function useLodash() {
 const _sfc_main$1 = /* @__PURE__ */ defineComponent({
   __name: "button",
   props: {
-    text: { default: "World" }
+    text: { default: "World" },
+    variant: {}
   },
   setup(__props) {
     const props = __props;

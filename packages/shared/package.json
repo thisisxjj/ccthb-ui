@@ -6,10 +6,12 @@
   },
   "main": "./dist/ccthb-ui-shared.umd.js",
   "module": "./dist/ccthb-ui-shared.mjs",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "require": "./dist/ccthb-ui-shared.umd.js",
-      "module": "./dist/ccthb-ui-shared.mjs"
+      "module": "./dist/ccthb-ui-shared.mjs",
+      "types": "./dist/index.d.ts"
     }
   },
   "dependencies": {

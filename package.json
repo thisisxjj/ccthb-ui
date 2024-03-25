@@ -2,13 +2,21 @@
   "name": "ccthb-ui",
   "private": true,
   "scripts": {
-    "build:ui": "pnpm --filter ./packages/** run build"
+    "clean:type": "rimraf ./dist",
+    "type:node": "tsc -p tsconfig.node.json --noEmit --composite false",
+    "type:src": "pnpm run clean:type && vue-tsc -p tsconfig.src.json --composite false --declaration --emitDeclarationOnly",
+    "mv-type": "tsx ./scripts/dts-mv.ts && pnpm run clean:type",
+    "build:ui": "pnpm run type:src && pnpm --filter ./packages/** run build && pnpm run mv-type"
   },
   "devDependencies": {
+    "@types/node": "^20.11.30",
     "@vitejs/plugin-vue": "^5.0.4",
+    "rimraf": "^5.0.5",
     "sass": "^1.72.0",
+    "tsx": "^4.7.1",
     "typescript": "^5.4.3",
-    "vite": "^5.2.2"
+    "vite": "^5.2.2",
+    "vue-tsc": "^2.0.7"
   },
   "dependencies": {
     "vue": "^3.4.21"

@@ -21,10 +21,12 @@
 
   "main": "./dist/ccthb-ui-components.umd.js",
   "module": "./dist/ccthb-ui-components.mjs",
+  "types": "./dist/*/src/*.d.ts",
   "exports": {
     ".": {
       "require": "./dist/ccthb-ui-components.umd.js",
-      "module": "./dist/ccthb-ui-components.mjs"
+      "module": "./dist/ccthb-ui-components.mjs",
+      "types": "./dist/*/src/*.d.ts"
     }
   },
 

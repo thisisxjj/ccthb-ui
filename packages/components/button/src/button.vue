@@ -10,6 +10,7 @@ import { hello } from '@ccthb-ui/shared'
 
 const props = withDefaults(defineProps<{
   text?: string
+  variant: 'primary' |'success' | 'warning' | 'danger' | 'info'
 }>(), {
   text: 'World',
 })
