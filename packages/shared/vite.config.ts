@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vite';
 
 export default defineConfig({
   build: {
@@ -23,5 +23,5 @@ export default defineConfig({
     },
     // 为了方便学习，查看构建产物，将此置为 false，不要混淆产物代码
     minify: false,
-  }
-})
+  },
+});
