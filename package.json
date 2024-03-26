@@ -2,14 +2,15 @@
   "name": "ccthb-ui",
   "private": true,
   "scripts": {
-    "prepare": "husky install",
+    "lintstaged": "lint-staged",
     "lint:style": "stylelint --fix ./**/*.{css,scss,vue}",
     "lint:script": "eslint --ext .js,.jsx,.ts,.tsx,.vue --fix ./",
     "clean:type": "rimraf ./dist",
     "type:node": "tsc -p tsconfig.node.json --noEmit --composite false",
     "type:src": "pnpm run clean:type && vue-tsc -p tsconfig.src.json --composite false --declaration --emitDeclarationOnly",
     "mv-type": "tsx ./scripts/dts-mv.ts && pnpm run clean:type",
-    "build:ui": "pnpm run type:src && pnpm --filter ./packages/** run build && pnpm run mv-type"
+    "build:ui": "pnpm run type:src && pnpm --filter ./packages/** run build && pnpm run mv-type",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.2.1",
@@ -25,6 +26,7 @@
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-vue": "^9.23.0",
     "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "postcss-html": "^1.6.0",
     "prettier": "^3.2.5",
     "rimraf": "^5.0.5",
